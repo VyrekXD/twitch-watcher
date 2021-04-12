@@ -92,7 +92,7 @@ Probiere den non-headless mode aus. Setze den Wert auf `true`, wie hier im Beisp
 ```javascript
 const showBrowser = true;
 ```
-[Gehe zum Code](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L15)
+[Gehe zum Code](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L24)
 ___
 ### Proxy?
 
@@ -100,7 +100,7 @@ Natürlich:
 ```javascript
 const proxy = ""; // "ip:port" By https://github.com/Jan710
 ```
-[Gehe zum Code](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L15)  
+[Gehe zum Code](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L25)   
 
 ODER
 Mit Docker:
@@ -112,7 +112,7 @@ ___
 ```javascript
 const browserScreenshot = false;
 ```
-[Gehe zum Code](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L15)
+[Gehe zum Code](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L27)
 
 ## Spenden
 Bitte spende um das Projekt am Leben zu erhalten!
