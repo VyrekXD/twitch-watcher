@@ -110,7 +110,7 @@ Experimente o modo sem cabeçalho. Defina o valor sem cabeçalho como `true`, de
 const showBrowser = true;
 ```
 
-[Vá até o código](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L15)
+[Vá até o código](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L24)
 
 ---
 
@@ -122,7 +122,7 @@ Sim, claro:
 const proxy = ""; // "ip:port" Por https://github.com/Jan710
 ```
 
-[Vá até o código](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L15)
+[Vá até o código](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L25)  
 
 OU
 
@@ -140,7 +140,7 @@ proxy=PROXY_IP_ADDRESS:PROXY_PORT
 const browserScreenshot = false;
 ```
 
-[Vá até o código](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L15)
+[Vá até o código](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L27)
 ## Doação
 
 Doe para manter vivo este projeto!
