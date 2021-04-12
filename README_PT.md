@@ -1,7 +1,7 @@
-<h1 align="center">Valorant watcher</h1>
+<h1 align="center">Twitch watcher</h1>
 <p align="center"> Passei dois dias assistindo os streams de Valorant para conseguir um drop. Fiquei entediado...</p>
 <p align="center">
-<img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/D3vl0per/Valorant-watcher"> <img alt="GitHub" src="https://img.shields.io/github/repo-size/D3vl0per/Valorant-watcher"> <img alt="GitHub repo size" src="https://img.shields.io/github/license/D3vl0per/Valorant-watcher"> <img alt="GitHub issues" src="https://img.shields.io/github/issues/D3vl0per/Valorant-watcher"> <a href="https://asciinema.org/a/rob4Rh1EG4XFVfN4XWK67JSnf" target="_blank"><img src="https://asciinema.org/a/rob4Rh1EG4XFVfN4XWK67JSnf.svg" /></a>
+<img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/InstreakTV/twitch-watcher"> <img alt="GitHub" src="https://img.shields.io/github/repo-size/InstreakTV/twitch-watcher"> <img alt="GitHub repo size" src="https://img.shields.io/github/license/InstreakTV/twitch-watcher"> <img alt="GitHub issues" src="https://img.shields.io/github/issues/InstreakTV/twitch-watcher"> <a href="https://asciinema.org/a/rob4Rh1EG4XFVfN4XWK67JSnf" target="_blank"><img src="https://asciinema.org/a/rob4Rh1EG4XFVfN4XWK67JSnf.svg" /></a>
 </p>
 
 ## Recursos
@@ -17,7 +17,7 @@
 - 🧰 Base de código altamente personalizável
 - 📦 Implantável no VPS pelo Docker
 - 🏳️ Comunidade de suporte colaborativa
-- 💬 Readme (Leia-me) em vários idiomas: [🇫🇷 README](https://github.com/D3vl0per/Valorant-watcher/blob/languages/README_FR.md), [🇧🇷 README](https://github.com/D3vl0per/Valorant-watcher/blob/languages/README_BR.md)
+- 💬 Readme (Leia-me) em vários idiomas: [🇫🇷 README](https://github.com/InstreakTV/twitch-watcher/blob/languages/README_FR.md) [🇧🇷 README](https://github.com/InstreakTV/twitch-watcher/blob/languages/README_PT.md) [🇷🇺 README](https://github.com/InstreakTV/twitch-watcher/blob/languages/README_RU.md) [🇸🇰 README](https://github.com/InstreakTV/twitch-watcher/blob/languages/README_SK.md) [🇩🇪 README](https://github.com/InstreakTV/twitch-watcher/blob/languages/README_DE.md)
 
 ## Requisitos
 
@@ -78,7 +78,7 @@
 ## Dependências
 
 <p align="center">
-<img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/D3vl0per/Valorant-watcher/puppeteer-core"> <img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/D3vl0per/Valorant-watcher/cheerio"> <img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/D3vl0per/Valorant-watcher/inquirer"> <img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/D3vl0per/Valorant-watcher/dotenv"> <img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/D3vl0per/Valorant-watcher/dayjs"> <img alt="GitHub package.json dependency version (prod)" src="https://img.shields.io/github/package-json/dependency-version/D3vl0per/valorant-watcher/tree-kill">
+<img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/InstreakTV/twitch-watcher/puppeteer-core"> <img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/InstreakTV/twitch-watcher/cheerio"> <img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/InstreakTV/twitch-watcher/inquirer"> <img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/InstreakTV/twitch-watcher/dotenv"> <img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/InstreakTV/twitch-watcher/dayjs"> <img alt="GitHub package.json dependency version (prod)" src="https://img.shields.io/github/package-json/dependency-version/InstreakTV/twitch-watcher/tree-kill">
 </p>
 
 ## Solução de problemas
@@ -98,7 +98,7 @@ Atraso padrão:
 const scrollDelay = 2000;
 ```
 
-[Vá até o código](https://github.com/D3vl0per/Valorant-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L15)
+[Vá até o código](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L15)
 
 ---
 
@@ -110,7 +110,7 @@ Experimente o modo sem cabeçalho. Defina o valor sem cabeçalho como `true`, de
 const showBrowser = true;
 ```
 
-[Vá até o código](https://github.com/D3vl0per/Valorant-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L24)
+[Vá até o código](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L15)
 
 ---
 
@@ -122,7 +122,7 @@ Sim, claro:
 const proxy = ""; // "ip:port" Por https://github.com/Jan710
 ```
 
-[Vá até o código](https://github.com/D3vl0per/Valorant-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L25)
+[Vá até o código](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L15)
 
 OU
 
@@ -140,8 +140,7 @@ proxy=PROXY_IP_ADDRESS:PROXY_PORT
 const browserScreenshot = false;
 ```
 
-[Vá até o código](https://github.com/D3vl0per/Valorant-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L27)
-
+[Vá até o código](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L15)
 ## Doação
 
 Doe para manter vivo este projeto!
@@ -152,7 +151,7 @@ Especialmente os Drop Farmers que coletam toneladas de dinheiro com este softwar
 
 ## Suporte
 
-- Keybase em [https://keybase.io/d3v\_](https://keybase.io/d3v_)
+- Twitter em [https://twitter.com/InstreakTV](https://twitter.com/InstreakTV)
 - Discord em [https://discord.gg/s8AH4aZ](https://discord.gg/s8AH4aZ)
 
 ## Aviso Legal
