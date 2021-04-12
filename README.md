@@ -2,9 +2,9 @@
 
 
 <h1 align="center">Twitch watcher</h1>
-<p align="center"> I spent two days watching Valorant streams to get a drop. I got bored...</p>
+<p align="center"> A bot that automatically watches and claims twitch drops.</p>
 <p align="center">
-<img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/D3vl0per/Valorant-watcher"> <img alt="GitHub" src="https://img.shields.io/github/repo-size/D3vl0per/Valorant-watcher"> <img alt="GitHub repo size" src="https://img.shields.io/github/license/D3vl0per/Valorant-watcher"> <img alt="GitHub issues" src="https://img.shields.io/github/issues/D3vl0per/Valorant-watcher"> <a href="https://asciinema.org/a/rob4Rh1EG4XFVfN4XWK67JSnf" target="_blank"><img src="https://asciinema.org/a/rob4Rh1EG4XFVfN4XWK67JSnf.svg" /></a>
+<img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/InstreakTV/twitch"> <img alt="GitHub" src="https://img.shields.io/github/repo-size/InstreakTV/twitch"> <img alt="GitHub repo size" src="https://img.shields.io/github/license/InstreakTV/twitch"> <img alt="GitHub issues" src="https://img.shields.io/github/issues/InstreakTV/twitch"> <a href="https://asciinema.org/a/rob4Rh1EG4XFVfN4XWK67JSnf" target="_blank"><img src="https://asciinema.org/a/rob4Rh1EG4XFVfN4XWK67JSnf.svg" /></a>
 </p>
 
 ## Features
@@ -12,14 +12,14 @@
 - 🔐 Cookie-based login
 - 📜 Auto accept cookie policy
 - 👨‍💻 The choice of a random streamer with drop-enabled tag
-- 🤐 Unmuted stream
+- 🤐 Muted stream
 - 🛠 Detect mature content-based stream and interact with it
 - 🛡 Proxy option
 - 📽 Automatic lowest possible resolution settings
 - 🧰 Highly customizable codebase
 - 📦 Deployable to VPS by docker
 - 🏳️ Helpful support community
-- 💬 Multi language readme: [🇫🇷 README](https://github.com/D3vl0per/Valorant-watcher/blob/languages/README_FR.md) [🇧🇷 README](https://github.com/D3vl0per/Valorant-watcher/blob/languages/README_PT.md) [🇷🇺 README](https://github.com/D3vl0per/Valorant-watcher/blob/languages/README_RU.md) [🇸🇰 README](https://github.com/D3vl0per/Valorant-watcher/blob/languages/README_SK.md)
+- 💬 Multi language readme: [🇫🇷 README](https://github.com/InstreakTV/twitch/blob/languages/README_FR.md) [🇧🇷 README](https://github.com/InstreakTV/twitch/blob/languages/README_PT.md) [🇷🇺 README](https://github.com/InstreakTV/twitch/blob/languages/README_RU.md) [🇸🇰 README](https://github.com/InstreakTV/twitch/blob/languages/README_SK.md) [🇩🇪 README](https://github.com/InstreakTV/twitch/blob/languages/README_DE.md)
 
 ## Requirements
 
@@ -68,7 +68,7 @@
 4. Run with `docker-compose up -d` command
 ## Dependencies
 <p align="center">
-<img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/D3vl0per/Valorant-watcher/puppeteer-core"> <img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/D3vl0per/Valorant-watcher/cheerio"> <img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/D3vl0per/Valorant-watcher/inquirer"> <img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/D3vl0per/Valorant-watcher/dotenv"> <img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/D3vl0per/Valorant-watcher/dayjs"> <img alt="GitHub package.json dependency version (prod)" src="https://img.shields.io/github/package-json/dependency-version/D3vl0per/valorant-watcher/tree-kill">
+<img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/InstreakTV/twitch/puppeteer-core"> <img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/InstreakTV/twitch/cheerio"> <img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/InstreakTV/twitch/inquirer"> <img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/InstreakTV/twitch/dotenv"> <img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/InstreakTV/twitch/dayjs"> <img alt="GitHub package.json dependency version (prod)" src="https://img.shields.io/github/package-json/dependency-version/InstreakTV/twitch/tree-kill">
 </p>
 
 ## Troubleshooting
@@ -85,14 +85,14 @@ Default delay:
 ```javascript
 const scrollDelay = 2000;
 ```
-[Go to code](https://github.com/D3vl0per/Valorant-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L15)
+[Go to code](https://github.com/InstreakTV/twitch/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L15)
 ___
 ### Something went wrong?
 Try non-headless mode. Set headless value to `true`, like this:
 ```javascript
 const showBrowser = true;
 ```
-[Go to code](https://github.com/D3vl0per/Valorant-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L24)
+[Go to code](https://github.com/InstreakTV/twitch/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L24)
 ___
 ### Proxy?
 
@@ -100,7 +100,7 @@ Yes, of course:
 ```javascript
 const proxy = ""; // "ip:port" By https://github.com/Jan710
 ```
-[Go to code](https://github.com/D3vl0per/Valorant-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L25)  
+[Go to code](https://github.com/InstreakTV/twitch/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L25)  
 
 OR
 
@@ -113,7 +113,7 @@ ___
 ```javascript
 const browserScreenshot = false;
 ```
-[Go to code](https://github.com/D3vl0per/Valorant-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L27)
+[Go to code](https://github.com/InstreakTV/twitch/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L27)
 
 ## Donation
 Please donate to keep alive this project!
@@ -124,8 +124,8 @@ Especially the drop farmers who gather tons of money with this software!🤓
 
 
 ## Support
- - Keybase at [https://keybase.io/d3v_](https://keybase.io/d3v_)
- - Discord at [https://discord.gg/s8AH4aZ](https://discord.gg/s8AH4aZ)
+ - Twitter at [https://twitter.com/InstreakTV](https://twitter.com/InstreakTV)
+ - Discord at [https://discord.gg/s8AH4aZ](https://discord.gg/s8AH4aZ) (Old Server please dm K.K. Slider#0815)
 
 ## Disclaimer
 This code is for educational and research purposes only.
