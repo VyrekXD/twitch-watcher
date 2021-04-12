@@ -2,7 +2,7 @@
 
 
 <h1 align="center">Twitch watcher</h1>
-<p align="center"> Strávil som dve dni sledovaním Valorant streamov. Prestalo ma to baviť...</p>
+<p align="center"> Robot, ktorý automaticky sleduje a tvrdí, že má kvapky. </p>
 <p align="center">
 <img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/InstreakTV/twitch-watcher"> <img alt="GitHub" src="https://img.shields.io/github/repo-size/InstreakTV/twitch-watcher"> <img alt="GitHub repo size" src="https://img.shields.io/github/license/InstreakTV/twitch-watcher"> <img alt="GitHub issues" src="https://img.shields.io/github/issues/InstreakTV/twitch-watcher"> <a href="https://asciinema.org/a/rob4Rh1EG4XFVfN4XWK67JSnf" target="_blank"><img src="https://asciinema.org/a/rob4Rh1EG4XFVfN4XWK67JSnf.svg" /></a>
 </p>
