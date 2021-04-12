@@ -92,7 +92,7 @@ Essayez le mode sans tête. Réglez la valeur du mode sans tête sur "true", com
 ```javascript
 const showBrowser = true;
 ```
-[code](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L15)
+[code](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L24)
 ___
 ### Proxy?
 
@@ -100,7 +100,7 @@ Oui, ils sont disponible;
 ```javascript
 const proxy = ""; // "ip:port" By https://github.com/Jan710
 ```
-[code](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L15)
+[code](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L25) 
 
 OU
 
@@ -113,7 +113,7 @@ ___
 ```javascript
 const browserScreenshot = false;
 ```
-[code](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L15)
+[code](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L27)
 
 ## Donation
 Faites un don pour maintenir ce projet en vie !
