@@ -4,7 +4,7 @@
 <h1 align="center">Twitch watcher</h1>
 <p align="center"> A bot that automatically watches and claims twitch drops.</p>
 <p align="center">
-<img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/InstreakTV/twitch"> <img alt="GitHub" src="https://img.shields.io/github/repo-size/InstreakTV/twitch"> <img alt="GitHub repo size" src="https://img.shields.io/github/license/InstreakTV/twitch"> <img alt="GitHub issues" src="https://img.shields.io/github/issues/InstreakTV/twitch"> <a href="https://asciinema.org/a/rob4Rh1EG4XFVfN4XWK67JSnf" target="_blank"><img src="https://asciinema.org/a/rob4Rh1EG4XFVfN4XWK67JSnf.svg" /></a>
+<img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/InstreakTV/twitch-watcher"> <img alt="GitHub" src="https://img.shields.io/github/repo-size/InstreakTV/twitch-watcher"> <img alt="GitHub repo size" src="https://img.shields.io/github/license/InstreakTV/twitch-watcher"> <img alt="GitHub issues" src="https://img.shields.io/github/issues/InstreakTV/twitch-watcher"> <a href="https://asciinema.org/a/rob4Rh1EG4XFVfN4XWK67JSnf" target="_blank"><img src="https://asciinema.org/a/rob4Rh1EG4XFVfN4XWK67JSnf.svg" /></a>
 </p>
 
 ## Features
@@ -19,7 +19,7 @@
 - 🧰 Highly customizable codebase
 - 📦 Deployable to VPS by docker
 - 🏳️ Helpful support community
-- 💬 Multi language readme: [🇫🇷 README](https://github.com/InstreakTV/twitch/blob/languages/README_FR.md) [🇧🇷 README](https://github.com/InstreakTV/twitch/blob/languages/README_PT.md) [🇷🇺 README](https://github.com/InstreakTV/twitch/blob/languages/README_RU.md) [🇸🇰 README](https://github.com/InstreakTV/twitch/blob/languages/README_SK.md) [🇩🇪 README](https://github.com/InstreakTV/twitch/blob/languages/README_DE.md)
+- 💬 Multi language readme: [🇫🇷 README](https://github.com/InstreakTV/twitch-watcher/blob/languages/README_FR.md) [🇧🇷 README](https://github.com/InstreakTV/twitch-watcher/blob/languages/README_PT.md) [🇷🇺 README](https://github.com/InstreakTV/twitch-watcher/blob/languages/README_RU.md) [🇸🇰 README](https://github.com/InstreakTV/twitch-watcher/blob/languages/README_SK.md) [🇩🇪 README](https://github.com/InstreakTV/twitch-watcher/blob/languages/README_DE.md)
 
 ## Requirements
 
@@ -68,7 +68,7 @@
 4. Run with `docker-compose up -d` command
 ## Dependencies
 <p align="center">
-<img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/InstreakTV/twitch/puppeteer-core"> <img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/InstreakTV/twitch/cheerio"> <img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/InstreakTV/twitch/inquirer"> <img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/InstreakTV/twitch/dotenv"> <img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/InstreakTV/twitch/dayjs"> <img alt="GitHub package.json dependency version (prod)" src="https://img.shields.io/github/package-json/dependency-version/InstreakTV/twitch/tree-kill">
+<img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/InstreakTV/twitch-watcher/puppeteer-core"> <img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/InstreakTV/twitch-watcher/cheerio"> <img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/InstreakTV/twitch-watcher/inquirer"> <img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/InstreakTV/twitch-watcher/dotenv"> <img alt="GitHub package.json dependency version (subfolder of monorepo)" src="https://img.shields.io/github/package-json/dependency-version/InstreakTV/twitch-watcher/dayjs"> <img alt="GitHub package.json dependency version (prod)" src="https://img.shields.io/github/package-json/dependency-version/InstreakTV/twitch-watcher/tree-kill">
 </p>
 
 ## Troubleshooting
@@ -85,14 +85,14 @@ Default delay:
 ```javascript
 const scrollDelay = 2000;
 ```
-[Go to code](https://github.com/InstreakTV/twitch/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L15)
+[Go to code](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L15)
 ___
 ### Something went wrong?
 Try non-headless mode. Set headless value to `true`, like this:
 ```javascript
 const showBrowser = true;
 ```
-[Go to code](https://github.com/InstreakTV/twitch/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L24)
+[Go to code](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L24)
 ___
 ### Proxy?
 
@@ -100,7 +100,7 @@ Yes, of course:
 ```javascript
 const proxy = ""; // "ip:port" By https://github.com/Jan710
 ```
-[Go to code](https://github.com/InstreakTV/twitch/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L25)  
+[Go to code](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L25)  
 
 OR
 
@@ -113,7 +113,7 @@ ___
 ```javascript
 const browserScreenshot = false;
 ```
-[Go to code](https://github.com/InstreakTV/twitch/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L27)
+[Go to code](https://github.com/InstreakTV/twitch-watcher/blob/12dce8065423861971b7088563ad936b2dcc2559/app.js#L27)
 
 ## Donation
 Please donate to keep alive this project!
