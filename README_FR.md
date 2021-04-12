@@ -1,6 +1,6 @@
 
 <h1 align="center">Twitch watcher</h1>
-<p align="center"> Cella fait 2 jours que je regardes des streams et je n'est toujours pas eu de clé...</p>
+<p align="center"> Un bot qui surveille automatiquement et réclame des chutes de contraction. </p>
 <p align="center">
 <img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/InstreakTV/twitch-watcher"> <img alt="GitHub" src="https://img.shields.io/github/repo-size/InstreakTV/twitch-watcher"> <img alt="GitHub repo size" src="https://img.shields.io/github/license/InstreakTV/twitch-watcher"> <img alt="GitHub issues" src="https://img.shields.io/github/issues/InstreakTV/twitch-watcher"> <a href="https://asciinema.org/a/rob4Rh1EG4XFVfN4XWK67JSnf" target="_blank"><img src="https://asciinema.org/a/rob4Rh1EG4XFVfN4XWK67JSnf.svg" /></a>
 </p>
