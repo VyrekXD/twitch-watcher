@@ -10,12 +10,14 @@ var run = true;
 var firstRun = true;
 var cookie = null;
 var streamers = null;
+
 // ========================================== CONFIG SECTION =================================================================
 const configPath = './config.json'
 const screenshotFolder = './screenshots/';
 const baseUrl = 'https://www.twitch.tv/';
 const userAgent = (process.env.userAgent || 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36');
-const streamersUrl = (process.env.streamersUrl || 'https://www.twitch.tv/rocketleague');
+const streamersUrl = (process.env.streamersUrl || 'https://www.twitch.tv/directory/game/Rocket%20League?tl=c2542d6d-cd10-4532-919b-3d19f30a768b');
+const dropsUrl = (process.env.dropsUrl || 'https://www.twitch.tv/drops/inventory');
 
 const scrollDelay = (Number(process.env.scrollDelay) || 2000);
 const scrollTimes = (Number(process.env.scrollTimes) || 5);
@@ -60,6 +62,8 @@ const streamPauseQuery = 'button[data-a-target="player-play-pause-button"]';
 const streamSettingsQuery = '[data-a-target="player-settings-button"]';
 const streamQualitySettingQuery = '[data-a-target="player-settings-menu-item-quality"]';
 const streamQualityQuery = 'input[data-a-target="tw-radio"]';
+const claimButtonQuery = '[data-test-selector="DropsCampaignInProgressRewardPresentation-claim-button"]';
+const cookieAcceptQuery = '[data-a-target="consent-banner-accept"]';
 // ========================================== CONFIG SECTION =================================================================
 
 
@@ -69,7 +73,7 @@ async function viewRandomPage(browser, page) {
   var browser_last_refresh = dayjs().add(browserClean, browserCleanUnit);
   while (run) {
     try {
-      if (dayjs(browser_last_refresh).isBefore(dayjs())) {
+	  if (dayjs(browser_last_refresh).isBefore(dayjs())) {
         var newSpawn = await cleanup(browser, page);
         browser = newSpawn.browser;
         page = newSpawn.page;
@@ -78,7 +82,7 @@ async function viewRandomPage(browser, page) {
       }
 
       if (dayjs(streamer_last_refresh).isBefore(dayjs())) {
-        await getAllStreamer(page); //Call getAllStreamer function and refresh the list
+		await getAllStreamer(page); //Call getAllStreamer function and refresh the list
         streamer_last_refresh = dayjs().add(streamerListRefresh, streamerListRefreshUnit); //https://github.com/D3vl0per/Valorant-watcher/issues/25
       }
 
@@ -100,11 +104,20 @@ async function viewRandomPage(browser, page) {
       }
       var sleep = getRandomInt(minWatching, maxWatching) * 60000; //Set watuching timer
 
-      console.log('\n🔗 Now watching streamer: ', baseUrl + watch);
+      if (watch == undefined) {
+		  console.log('=========================');
+		  console.log('🔗 No active streamer found.');
+		  console.log('💤 Waiting for ' + sleep / 60000 + ' minutes');
+		  await page.waitFor(sleep);
+		  continue
+	  }
+	  
+	  console.log('\n🔗 Now watching streamer: ', baseUrl + watch);
 
       await page.goto(baseUrl + watch, {
         "waitUntil": "networkidle0"
       }); //https://github.com/puppeteer/puppeteer/blob/master/docs/api.md#pagegobackoptions
+	  
 
       await clickWhenExist(page, cookiePolicyQuery);
       await clickWhenExist(page, matureContentQuery); //Click on accept button
@@ -155,6 +168,7 @@ async function viewRandomPage(browser, page) {
       console.log('💤 Watching stream for ' + sleep / 60000 + ' minutes\n');
 
       await page.waitFor(sleep);
+	  await getTwitchDrop(page);
     } catch (e) {
       console.log('🤬 Error: ', e);
       console.log('Please visit the discord channel to receive help: https://discord.gg/s8AH4aZ');
@@ -249,6 +263,19 @@ async function spawnBrowser() {
     browser,
     page
   };
+}
+
+
+async function getTwitchDrop(page) {
+  console.log("=========================");
+  await page.goto(dropsUrl, {
+    "waitUntil": "networkidle0"
+  });
+  console.log("🔭 Getting Drops...")
+  await clickWhenExist(page, cookieAcceptQuery);
+  await clickWhenExist(page, claimButtonQuery);
+  await page.waitFor(3000);
+  return;
 }
 
 
@@ -377,6 +404,7 @@ async function main() {
     browser,
     page
   } = await spawnBrowser();
+  await getTwitchDrop(page);
   await getAllStreamer(page);
   console.log("=========================");
   console.log('🔭 Running watcher...');
